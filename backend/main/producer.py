@@ -1,6 +1,6 @@
 import pika, json
 
-params = pika.URLParameters('your_rabbitmq_url')
+params = pika.URLParameters('amqp://guest:guest@localhost:5672')
 
 connection = pika.BlockingConnection(params)
 
